@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI는 비만도입니다.</title>
+</head>
+<body>
+
+	<div id="main" style="width: 400px; height: 50px; background: white; text-align: center; line-height: 50px; margin: 20px auto 50px auto;" > 방학때 얼마나 먹었는지 비만도를 계산해 봅시다.</div>
+	 
+	<div id="3rd" style="width: 1000px; height: 50px; background: white; text-align: center; line-height: 50px; margin: 20px auto 50px auto;" >
+		<input type="text" style="width: 200px; height: 30px; background:white; color:red; text-align: center; line-height:400px; margin: auto;" placeholder="당신의 키를 입력하세요!!" size="30" id="myHeigt">m
+		<input type="text" style="width: 200px; height: 30px; background: white; color:red; text-align: center; line-height:400px; margin: auto;" placeholder="당신의 몸무게는!?!?" size="30" id="myKg">kg
+
+		<button id="but">걱정말고 눌러</button>
+
+		<div id="output" style="width: 400px; height: 400px; background: #CEC199; color:white; text-align: center; line-height:400px; margin: 20px auto 50px auto;"> 당신의 비만도는????</div>
+
+		<script type="text/javascript">
+		
+		but.onclick = function(){
+
+			var BMI = myKg.value / (myHeigt.value * myHeigt.value);
+			var finalOutput = BMI + "입니닼ㅋㅋㅋㅋㅋㅋ";
+
+			output.innerHTML = finalOutput;
+		}
+	
+	
+
+		</script>
+	</div>
+	
+
+	<div id="second" style="width: 400px; height:30px; background: white; text-align: center; line-height: 30px; margin: 500px auto 20px auto;; "> 아래의 박스를 드래그 해보세요.</div>
+
+	<div id="second" style="width: 400px; height: 120px; background: #CFC19A; text-align: center; line-height: 30px;  margin: 20px auto 50px auto; color: #CFC19A;"> 20미만은 저체중 <br> 20-24는 정상 <br>24-30은 경도비만 <br>30 이상은!? 응 비만 ㅋㅋㅋㅋㅋ</div>
+
+</body>
+</html>
